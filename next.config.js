@@ -13,7 +13,10 @@ const sentryWebpackPluginOptions = {
   // https://github.com/getsentry/sentry-webpack-plugin#options.
 };
 
-module.exports = withSentryConfig({
-  i18n,
-  // target: "experimental-serverless-trace",
-};, sentryWebpackPluginOptions);
+module.exports = withSentryConfig(
+  {
+    i18n,
+    // target: "experimental-serverless-trace",
+  },
+  sentryWebpackPluginOptions
+);
