@@ -1,8 +1,8 @@
 const { i18n } = require("./next-i18next.config");
 // const { withSentryConfig } = require("@sentry/nextjs");
-const withPlugins = require("next-compose-plugins");
-// import withTranspileModules from 'next-transpile-modules'
-const optimizedImages = require("next-optimized-images");
+// const withPlugins = require("next-compose-plugins");
+// // import withTranspileModules from 'next-transpile-modules'
+// const optimizedImages = require("next-optimized-images");
 
 // const sentryWebpackPluginOptions = {
 //   // Additional config options for the Sentry Webpack plugin. Keep in mind that
@@ -23,18 +23,18 @@ const optimizedImages = require("next-optimized-images");
 //   },
 //   sentryWebpackPluginOptions
 // );
-const plugins = [
-  // withBundleAnalyzer,
-  [
-    optimizedImages,
-    {
-      handleImages: ["jpeg", "png", "svg", "webp", "gif"],
-      optimizeImages: true,
-      optimizeImagesInDev: false,
-    },
-  ],
-  // withTM,
-];
+// const plugins = [
+//   // withBundleAnalyzer,
+//   [
+//     optimizedImages,
+//     {
+//       handleImages: ["jpeg", "png", "svg", "webp", "gif"],
+//       optimizeImages: true,
+//       optimizeImagesInDev: false,
+//     },
+//   ],
+//   // withTM,
+// ];
 
 module.exports = withPlugins(plugins, {
   i18n,
