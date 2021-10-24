@@ -23,18 +23,18 @@ const { i18n } = require("./next-i18next.config");
 //   },
 //   sentryWebpackPluginOptions
 // );
-const plugins = [
-  // withBundleAnalyzer,
-  [
-    optimizedImages,
-    {
-      handleImages: ["jpeg", "png", "svg", "webp", "gif"],
-      optimizeImages: true,
-      optimizeImagesInDev: false,
-    },
-  ],
-  // withTM,
-];
+// const plugins = [
+//   // withBundleAnalyzer,
+//   [
+//     optimizedImages,
+//     {
+//       handleImages: ["jpeg", "png", "svg", "webp", "gif"],
+//       optimizeImages: true,
+//       optimizeImagesInDev: false,
+//     },
+//   ],
+//   // withTM,
+// ];
 
 // module.exports = withPlugins(plugins, {
 //   i18n,
