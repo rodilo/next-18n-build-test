@@ -40,4 +40,4 @@ const { i18n } = require("./next-i18next.config");
 //   i18n,
 // });
 
-module.exports = {};
+module.exports = { i18n };
